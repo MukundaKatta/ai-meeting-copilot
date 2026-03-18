@@ -1,29 +1,62 @@
-# ai-meeting-copilot
+# Ai Meeting Copilot
 
-**Real-time meeting assistant with transcription and action items**
+Real-time meeting assistant with transcription and action items
 
-## Install
+## Features
+
+- Action Extractor
+Api
+Calendar Integration
+Follow Up Generator
+Summarizer
+Transcriber
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/ai-meeting-copilot.git
+cd ai-meeting-copilot
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **transcriber**
-- **summarizer**
-- **action_extractor**
-- **follow_up_generator**
-- **calendar_integration**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+ai-meeting-copilot/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
