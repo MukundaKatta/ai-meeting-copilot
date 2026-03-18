@@ -1,41 +1,15 @@
 # ai-meeting-copilot
 
-**Real-time meeting assistant — transcription, action items, and follow-up generation**
+Stub Python project. Described as "real-time meeting assistant - transcription, action items, and follow-up generation," but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (AiMeetingCopilot) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There are additional Python files in src/ (transcriber.py, summarizer.py, action_extractor.py, follow_up_generator.py, calendar_integration.py, llm.py) but they follow the same stub pattern.
 
-## Quick Start
-```python
-from src.core import AiMeetingCopilot
- instance = AiMeetingCopilot()
-r = instance.process(input="test")
-```
+There is no actual transcription, no action item extraction, no follow-up generation, no calendar integration - just stubs.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+The project uses only Python standard library imports (time, logging, json, typing). No speech recognition or NLP libraries are present.
 
-## API
-| Method | Description |
-|--------|-------------|
-| `process()` | Process |
-| `analyze()` | Analyze |
-| `transform()` | Transform |
-| `validate()` | Validate |
-| `export()` | Export |
-| `get_stats()` | Get stats |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
+## Status
 
-## Test
-```bash
-pytest tests/ -v
-```
-
+Scaffolding only. No working meeting assistant functionality exists.
